@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contrivance</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contrivance</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="contact">Contact Us</a>
+          </li>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
+          <li>
+            <a href="#size">Size Guide</a>
+          </li>
+          <li>
+            <a href="#payment">Payment Method</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <br />
+    <article>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="Juan" required />
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="dela Cruz" required />
+
+        <label for="contact">Contact number</label>
+        <input type="number" id="contact" placeholder="09123456789" required />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="juandelacruz69@gmail.com"
+          required
+        />
+        <br />
+        <br />
+        <label for="product">Product</label>
+        <select id="product">
+          <option value="s1">Back to School</option>
+          <option value="s2">Boy in A Dream</option>
+          <option value="s3">Butter Fly Effect</option>
+          <option value="s4">Frog Avocado</option>
+        </select>
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" required />
+        <label for="Small">Small</label>
+        <input type="radio" name="size" required />
+        <label for="Medium">Medium</label>
+        <input type="radio" name="size" required/>
+        <label for="Large">Large</label>
+        <input type="radio" name="size" required/>
+        <label for="XL">XL</label>
+        <input type="radio" name="size" required/>
+        <label for="XXL">XXL</label>
+        <input type="radio" name="size" required/>
+        <label for="deliveryAddress">Delivery Address</label>
+        <input
+          type="text"
+          id="deliveryAddress"
+          placeholder="Brgy. Kulapi, Tayabas Rd. Lucban, Quezon"
+          required
+        />
+        <br />
+        <input type="submit" />
+      </form>
+    </article>
+    <footer>
+      <button type="menu"><a href="../index.html">Home</a></button>
+    </footer>
+  </body>
+</html>
