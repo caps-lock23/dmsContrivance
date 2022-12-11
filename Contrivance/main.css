@@ -1,26 +1,75 @@
 * {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: "Alstoria";
+    src: url("./font/Alstoria.ttf") format("truetype");
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-ul {
-    width: 100%;
+ .order {
+     display: flex;
+     flex-direction: column;
+     gap: .75rem;
+ }
+
+ p {
+    font-size: 12px;
+ }
+
+ .main-article {
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
+    justify-content: space-between;
+    width: 720px;
+    gap: 5rem;
+ }
+ 
+ h1, h2 {
+     font-family: "Alstoria", Arial, Helvetica, sans-serif;
+ }
+ header {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     padding: 10px;
+     justify-content: space-between;
+     background-color: #f7f5e8;
+ }
 
-li, a {
-    padding: 1.5rem;
-    list-style: none;
-    text-decoration: none;
-}
+ main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+ }
+
+ .wrapper {
+    background-color: #f7f5e8;
+ }
+ 
+ ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+ 
+ li {
+     padding: 12px;
+     align-items: center;
+     list-style: none;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ li:hover{
+     background-color: #e6e4d7;
+     border-radius: 7px;
+     transition-delay: 0.1s;
+ }
+ button {
+     width: fit-content;
+ }
