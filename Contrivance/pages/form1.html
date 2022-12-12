@@ -5,36 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contrivance</title>
-    <link rel="stylesheet" href="../styles/form1.css">
+    <link rel="stylesheet" href="../styles/form1.css" />
   </head>
   <body>
     <header>
-      <h1>Contrivance</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="contact">Contact Us</a>
-          </li>
-          <li>
-            <a href="#faq">FAQ</a>
-          </li>
-          <li>
-            <a href="#size">Size Guide</a>
-          </li>
-          <li>
-            <a href="#payment">Payment Method</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="head">
+        <h1 class="title">Contrivance</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#home" class="nav">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav">About</a>
+            </li>
+            <li>
+              <a href="contact" class="nav">Contact Us</a>
+            </li>
+            <li>
+              <a href="#faq" class="nav">FAQ</a>
+            </li>
+            <li>
+              <a href="#size" class="nav">Size Guide</a>
+            </li>
+            <li>
+              <a href="#payment" class="nav">Payment Method</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <hr />
-    <br />
+    <br>
     <article>
       <form action="upload.php" method="post" enctype="multipart/form-data">
         <label for="fname">First Name</label>
@@ -54,7 +55,6 @@
           required
         />
         <br />
-        <br />
         <label for="product">Product</label>
         <select id="product">
           <option value="s1">Back to School</option>
@@ -62,31 +62,38 @@
           <option value="s3">Butter Fly Effect</option>
           <option value="s4">Frog Avocado</option>
         </select>
+        <br />
         <label for="amount">Amount</label>
         <input type="number" id="amount" required />
-        <label for="Small">Small</label>
-        <input type="radio" name="size" required />
-        <label for="Medium">Medium</label>
-        <input type="radio" name="size" required/>
-        <label for="Large">Large</label>
-        <input type="radio" name="size" required/>
-        <label for="XL">XL</label>
-        <input type="radio" name="size" required/>
-        <label for="XXL">XXL</label>
-        <input type="radio" name="size" required/>
-        <label for="deliveryAddress">Delivery Address</label>
-        <input
-          type="text"
-          id="deliveryAddress"
-          placeholder="Brgy. Kulapi, Tayabas Rd. Lucban, Quezon"
-          required
-        />
         <br />
-        <input type="submit" />
+        <p class="size-label">Size</p>
+        <p>
+          <label for="Small">Small</label>
+          <input type="radio" name="size" required />
+          <label for="Medium">Medium</label>
+          <input type="radio" name="size" required />
+          <label for="Large">Large</label>
+          <input type="radio" name="size" required />
+          <label for="XL">XL</label>
+          <input type="radio" name="size" required />
+          <label for="XXL">XXL</label>
+          <input type="radio" name="size" required />
+          <br /><br />
+          <label for="deliveryAddress">Delivery Address</label>
+          <input
+            type="text"
+            id="deliveryAddress"
+            placeholder="Brgy. Kulapi, Tayabas Rd. Lucban, Quezon"
+            required
+          />
+          <br />
+        </p>
+        <br>
+        <div class="bottom">
+          <input type="submit" class="submit" />
+          <button type="menu"><a href="../index.html">Home</a></button>
+        </div>
       </form>
     </article>
-    <footer>
-      <button type="menu"><a href="../index.html">Home</a></button>
-    </footer>
   </body>
 </html>
