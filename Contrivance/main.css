@@ -6,11 +6,12 @@
 
 .toggle{
    position: absolute;
-   top: 1.25rem;
+   top: 2rem;
    right: 1.5rem;
    display: none;
    flex-direction: column;
    justify-content: space-between;
+   align-items: center;
    width: 2.5rem;
    height: 25px;
    padding: 0;
@@ -23,13 +24,8 @@
    background-color: #202023;
 }
 
-@media (max-width: 700px){
-   .toggle{
-      display: flex;
-   }
-   .nav {
-      display: none;
-   }
+.text-content{
+   width: 70%;
 }
 
 @font-face {
@@ -46,6 +42,7 @@ body{
      display: flex;
      flex-direction: column;
      gap: .75rem;
+     width: 97%;
  }
 
  p {
@@ -54,10 +51,8 @@ body{
 
  .main-article {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
     width: 1200px;
-    gap: 3rem;
  }
  
  h1, h2 {
@@ -77,9 +72,9 @@ body{
      display: flex;
      flex-direction: row;
      align-items: center;
-     padding: 10px;
      justify-content: center;
      background-color: #f7f5e8;
+     padding: 1.5rem;
      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
@@ -88,12 +83,13 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 3rem;
+    padding: 1.75rem;
     box-shadow: rgba(50, 50, 93, 0.025) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset; 
 }
 
  .wrapper {
     background-color: #f7f5e8;
+    width: 100%;
  }
  
  .quote {
@@ -111,9 +107,9 @@ body{
  }
  
  li {
-     padding: 12px;
-     align-items: center;
-     list-style: none;
+      padding-left: 1rem;
+      align-items: center;
+      list-style: none;
  }
  
  .wave {
@@ -143,9 +139,8 @@ body{
 
  .lineup {
     display: flex;
-    flex-flow: row, wrap;
     align-items: center;
-    gap: 1rem;
+    gap: .25rem;
  }
 
  .card{
@@ -179,8 +174,8 @@ body{
  .quote-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    width: 520px;
+    padding: 1.25rem;
+    max-width: 520px;
  }
 
  .author {
@@ -211,7 +206,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 720px;
+    width: 90%;
+    max-width: 720px;
     background-color: #002e25;
     color: white;
     border-radius: 10px;
@@ -248,3 +244,36 @@ body{
     display: flex;
     justify-content: center;
  }
+
+ @media (max-width: 700px){
+   .toggle{
+      display: flex;
+   }
+   .nav {
+      display: none;
+   }
+   .main-article{
+      display: flex;
+      flex-direction: column;
+      gap: .125rem;
+
+   }
+   .lineup {
+      display: flex;
+      flex-direction: column;
+   }
+   .wave {
+      width: 95%;
+   }
+   .text-content{
+      width: 90%;
+      text-align: justify;
+      margin-bottom: 1rem;
+   }
+   .title{
+      padding-left: 1rem;
+   }
+   .order{
+      align-items: center;
+   }
+}
