@@ -13,6 +13,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <div class="wrapper">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,6 +26,11 @@
       <div class="head">
         <h1 class="title">Contrivance</h1>
         <nav>
+          <a class="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
           <ul>
             <li>
               <a href="#home" class="nav">Home</a>
@@ -104,4 +110,5 @@
       </form>
     </article>
   </body>
+  </div>
 </html>
